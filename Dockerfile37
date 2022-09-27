@@ -36,8 +36,8 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 WORKDIR /usr/src/app
 
-RUN wget -q https://dl.lancdn.com/landian/soft/chrome/m/100.0.4896.60_amd64.deb && \
-    dpkg -i 100.0.4896.60_amd64.deb && rm -f 100.0.4896.60_amd64.deb
+# RUN wget -q https://dl.lancdn.com/landian/soft/chrome/m/100.0.4896.60_amd64.deb && \
+#     dpkg -i 100.0.4896.60_amd64.deb && rm -f 100.0.4896.60_amd64.deb
 
 RUN wget -q  https://npm.taobao.org/mirrors/chromedriver/$CDV/chromedriver_linux64.zip && \
     unzip chromedriver_linux64.zip && rm -f chromedriver_linux64.zip
