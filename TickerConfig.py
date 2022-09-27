@@ -117,10 +117,10 @@ OPEN_TIME = "12:59:57"
 # 1=使用selenium获取devicesID
 # 2=使用网页端/otn/HttpZF/logdevice获取devicesId，这个接口的算法目前可能有点问题，如果登录一直302的请改为配置1
 # 3=自己打开浏览器在headers-Cookies中抓取RAIL_DEVICEID和RAIL_EXPIRATION，这个就不用配置selenium
-COOKIE_TYPE = 3
+COOKIE_TYPE = 1
 # 如果COOKIE_TYPE=1，则需配置chromeDriver路径,下载地址http://chromedriver.storage.googleapis.com/index.html
 # chromedriver配置版本只要和chrome的大版本匹配就行
-CHROME_PATH = "/usr/src/app/chromedriver"
+CHROME_PATH = "/usr/bin/chromedriver"
 
 # 为了docker37 准备的环境变量，windows环境可以不用管这个参数
 CHROME_CHROME_PATH = "/usr/bin/google-chrome"
