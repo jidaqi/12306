@@ -46,7 +46,7 @@ TICKET_PEOPLES = ["赵丹丹", "李沛华"]
 
 # 12306登录账号
 USER = "LPH18566127697n"
-PWD = "lipeihua19980925"
+PWD = "isTBzS_3QykENAt"
 
 # 加入小黑屋时间默认为5分钟，此功能为了防止僵尸票导致一直下单不成功错过正常的票
 TICKET_BLACK_LIST_TIME = 5
@@ -102,7 +102,7 @@ ORDER_TYPE = 2
 
 # 下单模式 1 为预售，整点刷新，刷新间隔0.1-0.5S, 然后会校验时间，比如12点的预售，那脚本就会在12.00整检票，刷新订单
 #         2 是捡漏，捡漏的刷新间隔时间为0.5-3秒，时间间隔长，不容易封ip
-ORDER_MODEL = 1
+ORDER_MODEL = 2
 
 # 是否开启代理, 0代表关闭， 1表示开始
 # 开启此功能的时候请确保代理ip是否可用，在测试放里面经过充分的测试，再开启此功能，不然可能会耽误你购票的宝贵时间
@@ -117,7 +117,7 @@ OPEN_TIME = "12:59:57"
 # 1=使用selenium获取devicesID
 # 2=使用网页端/otn/HttpZF/logdevice获取devicesId，这个接口的算法目前可能有点问题，如果登录一直302的请改为配置1
 # 3=自己打开浏览器在headers-Cookies中抓取RAIL_DEVICEID和RAIL_EXPIRATION，这个就不用配置selenium
-COOKIE_TYPE = 1
+COOKIE_TYPE = 3
 # 如果COOKIE_TYPE=1，则需配置chromeDriver路径,下载地址http://chromedriver.storage.googleapis.com/index.html
 # chromedriver配置版本只要和chrome的大版本匹配就行
 CHROME_PATH = "/usr/bin/chromedriver"
@@ -126,8 +126,8 @@ CHROME_PATH = "/usr/bin/chromedriver"
 CHROME_CHROME_PATH = "/usr/bin/google-chrome"
 
 # 如果COOKIE_TYPE=3, 则需配置RAIL_EXPIRATION、RAIL_DEVICEID的值
-RAIL_EXPIRATION = "1664566790355"
-RAIL_DEVICEID = "oMZUhTo9elGGSTAYdTwBDsytNOyQP0Z2AIt1ZM8IDOWfX1qc-Mwc2cNVd5SThEkkAirEv0CgtTCZOh4nv5wCvI5YoGTLtcb4L5n2hFMQyLk2Sp8Y0SVHr_4PXTarX3b0xak0URSpO_9UAIAlOdWP4O-wfMiQXfaT"
+RAIL_EXPIRATION = "1664630232256"
+RAIL_DEVICEID = "dwEQVZOiCt0ulm_EIJ0hfw0HDUzmKJaH85GbISNAMKkOm4oaZ4YsR9oxlaUvqttPvBtzmaTa71XtpblrKU4e68d2VhjYIvVoM69RagaoUhNegn_7QIwtmlKzkWWTOKQSLXYiwLmnq0HoGTR8wYNSwNbN4GWVbXr4"
 # RAIL_EXPIRATION = "1577034103293"
 # RAIL_DEVICEID = "CDno29Erc_Pf3FSXb4dzq-Op64EhWrsi5yUZKVIKR1MAfYo2qFlCeXD8VkexY7_1qg-ClV-fE8j9jgVlPZxRh3wVc2iqLe_5A8sdr62qZx4B22JPF8lFCjpgTKZ5ODW90HJd5tiQsJ1KR9nOqHRxHj1FT5LEIwfw"
 

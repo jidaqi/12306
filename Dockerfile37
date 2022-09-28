@@ -29,6 +29,10 @@ RUN apt-get -y update && apt-get install -y \
     unzip \
     wget \
     xdg-utils \
+    libcurl3-gnutls \
+    libcurl3-nss \
+    libcurl4 \
+    libgbm1 \
  && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 ENV TZ Asia/Shanghai
@@ -36,8 +40,8 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 WORKDIR /usr/src/app
 
-# RUN wget -q https://dl.lancdn.com/landian/soft/chrome/m/100.0.4896.60_amd64.deb && \
-#     dpkg -i 100.0.4896.60_amd64.deb && rm -f 100.0.4896.60_amd64.deb
+RUN wget -q https://dl.lancdn.com/landian/soft/chrome/m/105.0.5195.127_amd64_%E8%93%9D%E7%82%B9%E7%BD%91.deb && \
+    dpkg -i 105.0.5195.127_amd64_蓝点网.deb && rm -f 105.0.5195.127_amd64_蓝点网.deb
 
 RUN wget -q  https://npm.taobao.org/mirrors/chromedriver/$CDV/chromedriver_linux64.zip && \
     unzip chromedriver_linux64.zip && rm -f chromedriver_linux64.zip
